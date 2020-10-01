@@ -1,0 +1,76 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{booktabs} %for 1 Minimal Table 
+
+\title{My Tables}
+\author{Dumebi Elueme}
+
+\begin{document}
+
+\maketitle
+
+\section{Minimal Table}
+Created this table for a Vehicle Dynamics Assignment where I was trying to plot the relationship between coefficient of rolling resistance for radial ply and bias ply tires.
+
+\begin{table}[!htbp]
+\centering
+\begin{tabular}{*5c}
+\toprule
+Speed &  \multicolumn{2}{r}{Radial Ply} & \multicolumn{2}{r}{Bias Ply}\\
+\midrule
+{}   & $f_r$        & $R_r$     & $f_r'$    & $R_b$\\
+\midrule
+40   &  0.013664    & 0.21274848 & 0.017204 & 0.26786628\\
+50   &  0.0137      & 0.213309 & 0.017375   & 0.27052875\\
+60   &  0.013744    & 0.21399408 & 0.017584 & 0.27378288\\
+70   &  0.013796    & 0.21480372 & 0.017831 & 0.27762867\\
+80   & 0.013856     & 0.21573792 & 0.018116 & 0.28206612\\
+90   &  0.013924  &  0.21679668   & 30.018439  & 0.28709523\\
+100   &  0.014  &  0.21798   & 0.0188  & 0.292716\\
+\bottomrule
+\end{tabular}
+\caption{Coefficient of rolling Resistance, Rolling Resistance for radial and bias ply tires}
+\end{table}
+
+\section{Basic Table}
+This was for a combustion lab, I just put results of a calculation on a table and then compared them with lab results. Lot's of variables!
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|l|r|r|r|r|}
+    \hline
+    Parameter & Test 1 & Test 2 & Test 3 & Test 4 \\
+    \hline
+    Average Piston Speed, $U_p$ (m/s) & 2.03 & 2.39 & 2.87 & 3.18 \\
+    \hline
+    Displacement Volume, $V_d$ $(m^3)$ & 0.000103 & 0.000103 & 0.000103 & 0.000103  \\
+    \hline
+    Air-Fuel Ratio, AF & 0.9270 & 1.007 & 1.007 & 1.0460 \\
+    \hline
+    Fuel-Air Ratio, FA & 1.0787 & 0.9930 & 0.9930 & 0.9560\\
+    \hline
+    Equivalence Ratio, $\phi$ & 16.4725 & 15.1639 & 15.1639 & 14.5985\\
+    \hline
+    Brake Power, $\dot W_b$ kW & 0.3272 & 0.3691 & 0.4038 & 0.3466 \\
+    \hline
+    Brake Thermal Efficiency, $\eta_{th,b}$ (\%) & 5.49 & 6.13 & 6.70 & 6.63\\
+    \hline
+    Brake Specific Fuel Consumption (g/kWh) & 1.4913 & 1.3358 & 1.2210 & 1.2350\\
+    \hline
+    Volumetric Efficiency, $\eta_{v}$ (\%) & 44.67 & 38.87 & 35.15 & 34.92\\
+    \hline
+    Specific Power, SP $kW/m^2$ & 101.2412 & 114.1914 & 124.9235 & 107.2268\\
+    \hline
+    Output per Displacement, OPD (kW/L) & 3163.788 & 3568.4826 & 3903.8594 & 3350.8364\\
+    \hline
+    Specific Volume, SV (L/kW) & 0.0003 & 0.0003 & 0.0003 & 0.0003\\
+    \hline
+    Specific Weight, SW (kg/kW) & 24.4483 & 21.6757 & 19.8136 & 23.0836\\
+    \hline
+    \end{tabular}
+    \caption{Calculated Parameters}
+    \label{tab:my_label}
+\end{table}
+
+
+\end{document}
